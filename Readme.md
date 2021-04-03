@@ -9,3 +9,6 @@ If you want to Read further you can expand the post and renders a seperate page.
 Logging in and registering works on my database but not on the web app.
 
 This will do for now and if i want to fix it and make the project better later on i will do but likely not going to.
+
+
+Yes there is loads of code that is either messy or unused. Deal with it :)
