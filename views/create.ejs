@@ -1,0 +1,50 @@
+<%- include("partials/template") -%>
+<center>
+<form action="/create" method="POST">
+<div class="container pt-1">
+    <div ng-controller="mainController as mainCtrl">
+      <form name="fooForm" class="form-horizontal">
+        <div class="form-group">
+          <label for="title" class="form-control-label col-md-4 col-sm-12">
+               Title
+          </label>
+          <div class="col-md-8 col-sm-12">
+            <input type="text" class="form-control" id="titleOne" name="title" maxlength="60" ng-model="mainCtrl.titleOne" required/>
+            
+            <!-- <small class="text-danger" ng-if="fooForm.titleOne.$touched && fooForm.titleOne.$error.required">
+              This field is required
+            </small> -->
+          </div>
+        </div>
+
+        </div>
+        <div class="form-group">
+          <label for="description" class="fornm-control-label col-md-4 col-sm-12">
+            Description
+          </label>
+          <div class="col-md-8 col-sm-12">
+            <textarea class="form-control" rows="3" id="description" name="content" ng-model="mainCtrl.description" maxlength="{{mainCtrl.maxDescriptionLength}}" required></textarea>
+
+            <!-- <small class="text-danger" ng-if="fooForm.description.$touched && fooForm.description.$error.required">
+              This field is required
+            </small> -->
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="col-xs-12">
+            <button class="btn btn-primary" ng-disabled="fooForm.$invalid" type="submit" name="submitPost">
+            Send
+          </button>
+          </div>
+        </div>
+      </form>
+
+      </div>
+    </div>
+  </div>
+</form>
+</center>
+
+<%- include("partials/styles") -%>
+

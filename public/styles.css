@@ -1,0 +1,32 @@
+body {
+    background-color: #f4f9f9;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+  }
+  
+  .navbar-fixed-top {
+    min-height: 80px;
+  
+    }
+  
+    @media (min-width: 768px) {
+    .navbar {
+    border-radius: 4px;
+    min-height: 80px;
+     }
+    }
+  
+  .container {
+    margin: 40px;
+    align-items: center;
+  }
+  
+  .copyright {
+    position: absolute;
+    bottom: 5px;
+    text-align: center;
+  width: 100%;
+  }
+
+  h1 {
+    align-items: center;
+  }

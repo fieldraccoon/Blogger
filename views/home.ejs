@@ -1,0 +1,27 @@
+<%- include("partials/template"); -%>
+
+
+<center><h1>Recent posts:</h1></center>
+        <% posts.forEach(function(post){ %>
+            <div class="card text-center">
+                <div class="card-header">
+                </div>
+                <div class="card-body text-dark">
+                    <h1 class="card-title">
+                        <%= post.title %>
+
+                    </h1>
+                    <p class="card-text">
+                        <%=post.content.substring(0, 100) + " ..." %>
+
+                    </p>
+                    <a href="/posts/<%=post.title%>" class="btn btn-primary">Read More</a>
+                </div>
+                <div class="card-footer text-muted">
+                    2 days ago
+                </div>
+            </div>
+
+
+
+            <% }) %>
